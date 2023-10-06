@@ -115,8 +115,10 @@ main {
 }
 
 .secondtitle {
-    text-align: center;
     justify-content: center;
     display: flex;
-    align-items: center;
+}
+
+.second-text {
+    text-align: center;
 }
