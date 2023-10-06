@@ -25,6 +25,7 @@ header {
 
 h1 {
     margin: 25px;
+    color: var(--yellow);
 }
 
 
@@ -40,16 +41,21 @@ ul li{
     padding-right: 10px;
 }
 
+main {
+    margin-top: 40px; 
+}
+
 .container {
     width: 30%; /* Set the width of the container */
     height: 555px;
     margin: 1%; /* Add margin as needed */
     border: 3px solid var(--space); /* Add a border for visualization */
-    overflow: hidden; /* Ensure the container doesn't overflow */
+    overflow: ; /* Ensure the container doesn't overflow */
     padding: 4px;
     border-style: dashed;
     float: left;
     position: relative;
+    transition-duration: 1s;
 }
 
 .container img {
@@ -58,11 +64,19 @@ ul li{
   display: block;
 }
 
+.container:hover {
+    transform: rotate(45deg); 
+}
+
+.container:active {
+    transform: scaleY(50%);
+}
+
 .container h2 {
     position: absolute;
-    top: 30px; /* Adjust the distance above the container */
+    top: -40px; /* Adjust the distance above the container */
     width: 100%; /* Make it span the width of the container */
-    color:var(--blue); /* Text color for better visibility */
+    color:var(--space); /* Text color for better visibility */
     text-align: center; /* Center text within the h2 */
     margin: 0; /* Remove default margin */
 }
@@ -71,4 +85,22 @@ ul li{
     content: "";
     clear: both;
     display: table;
+}
+
+.container2 {
+    width: 30%;
+    height: 300px;
+    margin: 1%;
+    padding: 4px;
+    position: relative;
+    text-align: center;
+    float: left;
+    flex-wrap: wrap;
+}
+
+.container2 p {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
 }
