@@ -58,23 +58,17 @@ main {
     float: left;
     position: relative;
     transition-duration: 1s;
+  
 }
 
 .container img {
     width: 100%;
     height: 100%;
     display: block;
+  
 }
 
-.container:hover {
-    transform: rotate(45deg);
-    cursor: grab;
-}
 
-.container:active {
-    transform: scaleY(50%);
-    cursor: grabbing;
-}
 
 .container h2 {
     position: absolute;
